@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/GameCss.css">
     <link rel="stylesheet" href="css/css/bootstrap.min.css">
-
-
-
 </head>
-<body>
-<section id="Home">
-    <div id="backgroundImage"><img src="assests/images/background.jpg" alt=""></div>
-    <div class="name">Jumping Dog</div>
+<body class="body" onload="idleAnimationStart();" onkeypress="keyCheck(event);">
+<section id="gamePage">
+
+    <img src="assests/images/dog/Idle (1).png" class="dog" alt="">
 
     <button style="    position: absolute;
-    right: 5vw;
-    top: 78vh;
+    top: 2vh;
     background-color: black;
     color: white;
-    font-size: 46px;" class="start-button" onclick="window.location.href='gamePage.html'">Start</button>
+    z-index: 10;
+    font-size: 24px;" class="exit-button" onclick="window.location.href='index.html'">exit</button>
 
+    <div id="GameImage"><img src="assests/images/background.jpg" alt=""></div>
+<!--    <div class="message">-->
+<!--        Enter To Start Game <p><span style="color: red;">&uarr;</span> ArrowUp to Jump</p>-->
+<!--    </div>-->
 </section>
 
 
